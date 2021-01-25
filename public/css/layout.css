@@ -34,6 +34,7 @@ header {
    min-height: 500px;
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   filter: grayscale(70%) contrast(100%);
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -207,9 +208,10 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   width: 200px;
+   height: 200px;
+   border-radius: 40px 40px;
+   object-fit: contain;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
